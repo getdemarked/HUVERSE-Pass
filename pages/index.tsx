@@ -17,7 +17,7 @@ import {
   
   // Put Your Edition Drop Contract address from the dashboard here
   const myEditionDropContractAddress =
-    "0xa048B62EC2ec1F3eb09de4dA47062C025CA715c1";
+    "0x72832E258b3b42B5B085F30b4D511Fa49d534DE2";
   
   // Put your token ID here
   const tokenId = 0;
@@ -296,6 +296,26 @@ import {
                   </div>
                 ) : (
                   <>
+                   <p>Quantity</p>
+                  <div className={styles.quantityContainer}>
+                    <button
+                      className={`${styles.quantityControlButton}`}
+                      onClick={() => setQuantity(quantity - 1)}
+                      disabled={quantity <= 1}
+                    >
+                      -
+                    </button>
+
+                    <h4>{quantity}</h4>
+
+                    <button
+                      className={`${styles.quantityControlButton}`}
+                      onClick={() => setQuantity(quantity + 1)}
+                      disabled={quantity >= maxClaimable}
+                    >
+                      +
+                    </button>
+                  </div>
   
                     <div className={styles.mintContainer}>
                       {isSoldOut ? (
