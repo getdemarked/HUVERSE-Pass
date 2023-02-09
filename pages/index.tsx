@@ -251,7 +251,7 @@ import {
             {/* Description of your NFT Collection */}
             <p className={styles.description}>
             A unique <b>non-fungible token</b> pass for Heroes Uprising community members to enter a special realm called <b>HUVERSE</b>.<br/><br/>
-              <a href="https://docs.heroesuprising.com/game-economy-tokens-sale-and-funds-information/access-pass" target="_blank" rel="noreferrer" className={styles.link}>
+              <a href="https://docs.heroesuprising.com/game-economy-tokens-sale-and-funds-information/huverse/huverse-pass" target="_blank" rel="noreferrer" className={styles.link}>
                 <b>Already have a HUVERSE Pass?</b>
               </a> 
             </p>
